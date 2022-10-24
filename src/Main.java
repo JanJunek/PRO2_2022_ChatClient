@@ -5,8 +5,10 @@ import models.chatClients.InMemoryChatClient;
 public class Main {
 
     public static void main(String[] args) {
+        ChatClient clietn = new InMemoryChatClient();
 
-        MainFrame window = new MainFrame(800, 600);
+        MainFrame window = new MainFrame(800, 600, clietn);
+
     }
     /*
     private static void test(){
